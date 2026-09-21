@@ -1,23 +1,21 @@
 ﻿using static System.Console;
 
-int x;
-int y;
-
-x = 3;
-y = 2 + ++x;
-
-WriteLine($"x = {x}");
-WriteLine($"y = {y}");
-
-x = 3 << 2;
-y = 10 >> 1;
-
-WriteLine($"x = {x}");
-WriteLine($"y = {y}");
-
-
-x = 10 & 8;
-y = 10 | 7;
-
-WriteLine($"x = {x}");
-WriteLine($"y = {y}");
+for (int i = 1; i <= 100; i++)
+{
+    if (i % 3 == 0 && i % 5 == 0)
+    {
+        WriteLine("FizzBuzz");
+    }
+    else if (i % 3 == 0)
+    {
+        WriteLine("Fizz");
+    }
+    else if (i % 5 == 0)
+    {
+        WriteLine("Buzz");
+    }
+    else
+    {
+        WriteLine(i);
+    }
+}
