@@ -1,20 +1,7 @@
-﻿using static System.Console;
+﻿using Ch04Ex02PrimeFactorsLib;
 
-try
-{
-    Write("Enter a number between 0 and 255: ");
-    int number1 = int.Parse(ReadLine()!);
-
-    Write("Enter another number between 0 and 255: ");
-    int number2 = int.Parse(ReadLine()!);
-
-    WriteLine($"{number1} divided by {number2} is {number1 / number2}");
-}
-catch (FormatException)
-{
-    WriteLine("Please enter valid numbers.");
-}
-catch (DivideByZeroException)
-{
-    WriteLine("You cannot divide by zero.");
-}
+Console.WriteLine(PrimeFactorsHelper.PrimeFactors(4));
+Console.WriteLine(PrimeFactorsHelper.PrimeFactors(7));
+Console.WriteLine(PrimeFactorsHelper.PrimeFactors(30));
+Console.WriteLine(PrimeFactorsHelper.PrimeFactors(40));
+Console.WriteLine(PrimeFactorsHelper.PrimeFactors(50));
