@@ -1,12 +1,23 @@
 ﻿using static System.Console;
 
-int max = 500;
+int x;
+int y;
 
-for (byte i = 0; i < max; i++)
-{
-if (i == byte.MaxValue)
-{
-    WriteLine("WARNING: i is about to overflow.");
-    break;
-}
-}
+x = 3;
+y = 2 + ++x;
+
+WriteLine($"x = {x}");
+WriteLine($"y = {y}");
+
+x = 3 << 2;
+y = 10 >> 1;
+
+WriteLine($"x = {x}");
+WriteLine($"y = {y}");
+
+
+x = 10 & 8;
+y = 10 | 7;
+
+WriteLine($"x = {x}");
+WriteLine($"y = {y}");
